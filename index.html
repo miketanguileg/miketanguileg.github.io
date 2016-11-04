@@ -6,9 +6,7 @@
     <h1> header tag</h1>
     <br />
     Hello!
-    <p>
-      a paragraph tag
-    </p>
+    <div id="myDiv"></div>
     Who is you favorite singer?
     <input type="text" id="answer">
     <br/>
@@ -24,6 +22,8 @@
     var answer2 = document.getElementById("myselect");
       alert(answer.value);
       alert(answer2.value);
+    var myDiv = document.getElementById("myDiv");
+      myDiv.innerHTML = answer.value + "!!!!!";
     }
     </script>
   
