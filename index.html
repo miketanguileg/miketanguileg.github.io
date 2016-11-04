@@ -1,6 +1,6 @@
 <html>
   <head> 
-    <title> 3The title of my web page</title>
+    <title> 4The title of my web page</title>
   </head>  
   <body>
     <h1> header tag</h1>
@@ -10,7 +10,15 @@
       a paragraph tag
     </p>
     Who is you favorite singer?
-   
+    <input type="text" id="answer">
+    <input type="submit" onclick="sayAnswer()" value="press">
+    <script>
+    function sayAnswer(){
+    var answer = document.getElementById("answer");
+      alert(answer.value);
+    }
+    </script>
+  
     
   </body>
   
