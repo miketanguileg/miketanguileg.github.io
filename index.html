@@ -11,15 +11,19 @@
     </p>
     Who is you favorite singer?
     <input type="text" id="answer">
+    <br/>
+    What state are you in?
     <select id="myselect">
-      <option>a 1</option>
-      <option>B 2</option>
+      <option>Washington</option>
+      <option>disarray</option>
     </select>
     <input type="submit" onclick="sayAnswer()" value="press">
     <script>
     function sayAnswer(){
     var answer = document.getElementById("answer");
+    var answer2 = document.getElementById("myselect");
       alert(answer.value);
+      alert(answer2.value);
     }
     </script>
   
